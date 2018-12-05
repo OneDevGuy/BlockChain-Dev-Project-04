@@ -18,10 +18,10 @@ node index.js
 
 ### Usage
 
-#### Wallet Address Validation  
+### Wallet Address Validation  
 Retuns a message to sign with your address.
 ```
- POST http://localhost:8000/requestValidation
+POST http://localhost:8000/requestValidation
 
 curl -X POST \
   http://localhost:8000/requestValidation \
@@ -41,7 +41,7 @@ Response.
 }
 ```
 
-#### Message Signature Validation
+### Message Signature Validation
 Post your signed message to validate your address.
 ```
 POST http://localhost:8000/message-signature/validate
@@ -69,7 +69,7 @@ Response
 }
 ```
 
-#### Star Registration
+### Star Registration
 Enter Star details to post to the blockchain.
 ```
 POST http://localhost:8000/block
@@ -105,7 +105,7 @@ Response
     "previousBlockHash": "945f89a628ae7d1b6e9347b4b6e0075b36ddb62b5be7b68700b2d53554e63ac9"
 }
 ```
-#### Find Star in Registry
+### Find Star in Registry
 You can serach by block height, address, or block hash.
 ```
 GET http://localhost:8000/block/:height
